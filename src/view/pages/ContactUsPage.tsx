@@ -78,7 +78,7 @@ function ContactUsPage() {
       <ContactHero />
 
       {/* Contact Details + Message */}
-      <section className="py-12 md:py-20 bg-white">
+      <section className="py-12 md:py-20 bg-gradient-to-r from-[#1a1510] to-[#0a0806]">
         <div className="px-4 mx-auto max-w-screen-xl md:max-w-screen-lg 2xl:max-w-screen-xl">
           <div
             className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-14 items-start"
@@ -87,7 +87,7 @@ function ContactUsPage() {
           >
             {/* Contact details + copy */}
             <ContactInfo
-              email="contact@digientttechnologies.com"
+              email="contact@protonixtechnologies.com"
               phone="+971 542806708"
             />
 

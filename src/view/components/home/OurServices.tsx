@@ -65,7 +65,7 @@ function Section03() {
           ) : (
             <>
               <p className="mb-8 font-light sm:px-16 lg:px-24 2xl:px-48 my-4 md:my-8 text-justify lg:text-center">
-                At Digient, our services are designed to transform your vision into reality through innovative and bespoke digital solutions. We approach every project with a commitment to excellence, ensuring that each service we offer is precisely tailored to meet the unique demands of your business. By leveraging the latest technologies and industry best practices, we provide solutions that are not only functional but also future-ready, empowering your brand to thrive in a competitive marketplace.
+                At Protonix Technologies, our services are designed to transform your vision into reality through innovative and bespoke digital solutions. We approach every project with a commitment to excellence, ensuring that each service we offer is precisely tailored to meet the unique demands of your business. By leveraging the latest technologies and industry best practices, we provide solutions that are not only functional but also future-ready, empowering your brand to thrive in a competitive marketplace.
               </p>
 
               <div className="mt-4">

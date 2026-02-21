@@ -8,7 +8,7 @@ function Header() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     const isActive = (path: string) => {
-        return location.pathname === path ? "underline" : "";
+        return location.pathname === path ? "active-link" : "";
     };
 
     const handleNavClick = () => {
@@ -25,7 +25,7 @@ function Header() {
 
     return (
         <>
-            <nav className="bg-dg-dark border-dg-outline z-20">
+            <nav className="bg-gradient-to-r from-[#1a1510] to-[#0a0806] border-b border-[#2a221a] z-20">
                 <div className="max-w-screen-xl md:max-w-screen-lg 2xl:max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
                     <Link
                         to="/"
@@ -33,7 +33,7 @@ function Header() {
                     >
                         <img
                             src="/images/logo/logo.png"
-                            alt="Digient Logo"
+                            alt="Protonix Technologies Logo"
                             title="Home"
                             //   height="auto"
                             //   width="auto"
@@ -45,7 +45,7 @@ function Header() {
                     <button
                         data-collapse-toggle="navbar-dropdown"
                         type="button"
-                        className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                        className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-[#e5e0d8] rounded-lg md:hidden hover:bg-[#2a221a]/50 focus:outline-none focus:ring-2 focus:ring-[#2a221a] transition-colors"
                         aria-controls="navbar-dropdown"
                         aria-expanded="false"
                         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -69,16 +69,15 @@ function Header() {
                     </button>
 
                     <div
-                        className={`${
-                            isMobileMenuOpen ? "" : "hidden"
-                        } w-full md:block md:w-auto`}
+                        className={`${isMobileMenuOpen ? "" : "hidden"
+                            } w-full md:block md:w-auto`}
                         id="navbar-dropdown"
                     >
-                        <ul className="nav-link font-light text-sm flex flex-col p-2 md:p-0 mt-4 border border-dg-outline rounded-lg bg-dg-dark md:flex-row md:mt-0 md:border-0 gap-2">
+                        <ul className="nav-link font-light text-sm flex flex-col p-2 md:p-0 mt-4 border border-[#2a221a] rounded-lg  md:flex-row md:mt-0 md:border-0 gap-2">
                             <li>
                                 <Link
                                     to="/"
-                                    className={`block py-2 px-3 text-dg-light hover:underline rounded p-2 ${isActive(
+                                    className={`block py-2 px-3 rounded p-2 transition-colors ${isActive(
                                         "/"
                                     )}`}
                                     aria-current="page"
@@ -90,7 +89,7 @@ function Header() {
                             <li>
                                 <Link
                                     to="/services"
-                                    className={`block py-2 px-3 text-dg-light rounded hover:underline md:border-0 p-2 ${isActive(
+                                    className={`block py-2 px-3 rounded md:border-0 p-2 transition-colors ${isActive(
                                         "/services"
                                     )}`}
                                     onClick={handleNavClick}
@@ -101,7 +100,7 @@ function Header() {
                             <li>
                                 <Link
                                     to="/careers"
-                                    className={`block py-2 px-3 text-dg-light rounded hover:underline md:border-0 p-2 ${isActive(
+                                    className={`block py-2 px-3 rounded md:border-0 p-2 transition-colors ${isActive(
                                         "/careers"
                                     )}`}
                                     onClick={handleNavClick}
@@ -113,7 +112,7 @@ function Header() {
                             <li>
                                 <Link
                                     to="/about-us"
-                                    className={`block py-2 px-3 text-dg-light rounded hover:underline md:border-0 p-2 ${isActive(
+                                    className={`block py-2 px-3 rounded md:border-0 p-2 transition-colors ${isActive(
                                         "/about-us"
                                     )}`}
                                     onClick={handleNavClick}
@@ -125,7 +124,7 @@ function Header() {
                             <li>
                                 <Link
                                     to="/contact-us"
-                                    className={`block py-2 px-3 text-dg-light rounded hover:underline md:border-0 p-2 ${isActive(
+                                    className={`block py-2 px-3 rounded md:border-0 p-2 transition-colors ${isActive(
                                         "/contact-us"
                                     )}`}
                                     onClick={handleNavClick}

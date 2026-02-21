@@ -1,9 +1,11 @@
 import { useState } from 'react';
 import Hero from '../components/home/Hero';
+import ScrollingStrip from '../components/home/ScrollingStrip';
 import OurDomain from '../components/home/WhyCompanyChooseUs';
 import WhatWeDo from '../components/home/WhatWeDo';
+import MilestonesSection from '../components/home/MilestonesSection';
 // import OurServices from '../components/home/OurServices';
-import InHouse from '../components/home/InHouse';
+// import InHouse from '../components/home/InHouse';
 import GetInTouch from '../components/home/GetInTouch';
 import QuoteDrawer from '../../layout/QuoteDrawer';
 
@@ -30,10 +32,12 @@ function HomePage() {
   return (
     <>
       <Hero onOpenQuoteDrawer={openDrawer} />
+      <ScrollingStrip />
       <WhatWeDo />
+      <MilestonesSection />
       <OurDomain />
       {/* <OurServices /> */}
-      <InHouse />
+      {/* <InHouse /> */}
       <GetInTouch onOpenQuoteDrawer={openDrawer} />
       <QuoteDrawer
         isOpen={isDrawerOpen}

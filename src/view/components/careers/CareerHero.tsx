@@ -1,21 +1,20 @@
 function CareerHero() {
     return (
-        <section className="relative overflow-hidden bg-dg-dark text-white py-16 md:py-24">
-            <div className="pointer-events-none absolute inset-0 opacity-40 bg-[radial-gradient(circle_at_top,_#2e3be5,_transparent_55%),_radial-gradient(circle_at_bottom,_#2e3be5,_transparent_55%)]" />
+        <section className="relative overflow-hidden bg-gradient-to-r from-[#1a1510] to-[#0a0806] py-16 md:py-24">
             <div
                 className="relative px-4 mx-auto max-w-screen-xl md:max-w-screen-lg 2xl:max-w-screen-xl"
                 data-aos="fade-up"
                 data-aos-duration="900"
             >
-                <p className="text-sm md:text-base font-light uppercase tracking-[0.25em] text-dg-light/90">
+                <p className="text-sm md:text-base font-light uppercase tracking-[0.25em] text-[#e5e0d8]/90">
                     Careers
                 </p>
-                <h1 className="mt-4 text-3xl md:text-5xl 2xl:text-6xl font-light md:font-normal leading-tight">
+                <h1 className="mt-4 text-3xl md:text-5xl 2xl:text-6xl font-light md:font-normal leading-tight text-[#e5e0d8]">
                     Work with a team that values ownership,
                     <br className="hidden md:block" />
                     learning, and technical excellence.
                 </h1>
-                <p className="mt-6 max-w-3xl text-sm md:text-base font-light text-dg-light">
+                <p className="mt-6 max-w-3xl text-sm md:text-base font-light text-[#e5e0d8]/80">
                     Join a product-focused engineering team where you can grow
                     your skills, ship meaningful features, and collaborate with
                     people who care deeply about quality.

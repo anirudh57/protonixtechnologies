@@ -20,4 +20,54 @@ body{
     -webkit-overflow-scrolling: none !important;
 }
 
+/* Header nav: text and underline use same warm off-white */
+.nav-link a {
+    @apply relative;
+    color: #e5e0d8;
+}
+.nav-link a::after {
+    content: '';
+    @apply absolute left-0 bottom-0.5 h-px w-full origin-left;
+    background-color: #e5e0d8;
+    transform: scaleX(0);
+    transition: transform 0.25s ease;
+}
+.nav-link a:hover::after,
+.nav-link a.active-link::after {
+    transform: scaleX(1);
+}
+
+/* Scrolling strip (marquee) */
+.scrolling-strip-mask {
+    overflow: hidden;
+    width: 100%;
+}
+.scrolling-strip-inner {
+    display: flex;
+    width: max-content;
+    animation: scrolling-strip 45s linear infinite;
+}
+.scrolling-strip-inner:hover {
+    animation-play-state: paused;
+}
+.scrolling-strip-item {
+    flex-shrink: 0;
+}
+.scrolling-strip-item:not(:last-child)::after {
+    content: "•";
+    @apply ml-6 md:ml-8 text-[#e5e0d8]/40;
+}
+@keyframes scrolling-strip {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* Tech strip: image + label items, no bullet separator */
+.scrolling-strip-tech {
+    gap: 0;
+}
+.scrolling-strip-tech-item {
+    flex-shrink: 0;
+}
+
 
