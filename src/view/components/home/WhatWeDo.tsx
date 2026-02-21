@@ -120,10 +120,10 @@ function Section02() {
         ) : (
           /* Mobile: cards grid then image below */
           <>
-            <div className="grid gap-4 px-2 sm:grid-cols-2">
+            <div className="grid gap-4 px-2 sm:grid-cols-2 py-2">
               {reasons.map((item, index) => cardEl(item, index))}
             </div>
-            <div className="mt-8 px-2 lg:hidden">
+            {/* <div className="mt-8 px-2 lg:hidden">
               <div className="rounded-2xl overflow-hidden border border-[#2a221a] bg-[#0a0806]/60 aspect-video flex items-center justify-center">
                 {!imageError ? (
                   <img
@@ -138,7 +138,7 @@ function Section02() {
                   </span>
                 )}
               </div>
-            </div>
+            </div> */}
           </>
         )}
       </div>
